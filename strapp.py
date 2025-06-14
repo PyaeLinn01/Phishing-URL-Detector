@@ -37,7 +37,7 @@ if st.button("🚀 Check Now"):
                     </div>
                 """, unsafe_allow_html=True)
                 st.markdown(f"**Confidence:** {proba_safe*100:.2f}%")
-                st.markdown(f'<span style="color:#155724;">✅ It is safe to visit: <a href="{url}" target="_blank">{url}</a></span>', unsafe_allow_html=True)
+                st.markdown(f'<span style="color:#008000;">✅ It is safe to visit: <a href="{url}" target="_blank">{url}</a></span>', unsafe_allow_html=True)
 
             else:
                 # Unsafe URL
@@ -47,7 +47,7 @@ if st.button("🚀 Check Now"):
                     </div>
                 """, unsafe_allow_html=True)
                 st.markdown(f"**Confidence:** {proba_phishing*100:.2f}%")
-                st.markdown(f'<span style="color:#721c24;">❌ This is not safe to visit: {url}</span>', unsafe_allow_html=True)
+                st.markdown(f'<span style="color:#FF0000;">❌ This is not safe to visit: {url}</span>', unsafe_allow_html=True)
 
         except Exception as e:
             st.error("An error occurred during processing.")
