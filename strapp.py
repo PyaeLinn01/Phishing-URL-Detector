@@ -87,3 +87,4 @@ if st.button(texts["button"]):
             st.code(str(e))
     else:
         st.warning(texts["empty"])
+        
